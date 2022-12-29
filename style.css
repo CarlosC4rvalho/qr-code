@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+:root {
+
+    /* fonts */
+    --font-family: 'Amatic SC', sans-serif;
+    --small-font: 1.5rem;
+    --medium-font: 2rem;
+    --large-font: 2.5rem;
+
+    /* colors and backgrounds */
+    --primary-color: #ffff;
+    --second-color: #0783ff;
+    --background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+
+}
+
+/* main */
+
+body {
+    overflow: hidden;
+    font-family: var(--font-family);
+    font-size: var(--small-font);
+    color: var(--primary-color);
+    background-image: var(--background);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.btn-go {
+    background-image: var(--background);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    width: 30%;
+    cursor: pointer;
+    font-size: var(--small-font);
+    color: var(--primary-color);
+}
+
+.btn-go:hover {
+    transition: .2s ease;
+    opacity: 0.8;
+}
+
+/* footer */
+
+.credits {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--primary-color);
+}
+
+.link {
+    color: var(--second-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img-code {
+    display: none;
+}
+
+.wrapper-active,
+.img-code {
+   display: block;
+   transform: all .5s .5s ease;
+}

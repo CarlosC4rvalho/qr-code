@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+:root {
+
+    /* fonts */
+    --font-family: 'Amatic SC', sans-serif;
+    --small-font: 2rem;
+    --large-font: 2.5rem;
+
+    /* colors and backgrounds */
+    --primary-color: #ffff;
+    --second-color: #0783ff;
+    --background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+
+}
+
+/* main */
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--small-font);
+    color: var(--primary-color);
+    background-image: var(--background);
+    overflow: hidden;
+}
+
+.container {
+    height: 90vh;
+}
+
+.wrapper {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.btn-go {
+    background-image: var(--background);
+    font-size: var(--small-font);
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-go:hover {
+    transition: .2s ease;
+    opacity: 0.8;
+}
+
+/* footer */
+
+.credits {
+    color: var(--primary-color);
+}
+
+.link {
+    color: var(--second-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img-code {
+    display: none;
+}
+
+.wrapper-active,
+.img-code {
+   display: block;
+   transform: all .5s .5s ease;
+}
